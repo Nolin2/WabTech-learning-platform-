@@ -1,1 +1,27 @@
+<!-- aiTutor.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WabTech - AI Tutor</title>
+  <link rel="stylesheet" href="style/dashboard.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h2>WabTech</h2>
+    <div><a href="dashboard.html" style="color:white;text-decoration:none">Dashboard</a></div>
+  </nav>
 
+  <div style="max-width:800px;margin:28px auto;padding:16px">
+    <h2>AI Tutor (Mock)</h2>
+    <div id="chatLog" style="height:360px;background:#f9fafb;padding:12px;overflow:auto;border-radius:10px"></div>
+    <div style="display:flex;gap:8px;margin-top:12px">
+      <input id="chatInput" type="text" placeholder="Ask about deployment..." style="flex:1;padding:10px;border-radius:8px;border:1px solid #d1d5db">
+      <button id="sendBtn" class="btn">Send</button>
+    </div>
+  </div>
+
+  <script type="module" src="aiTutor.js"></script>
+</body>
+</html>
